@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentedControl" customModule="SegmentedControl" customModuleProvider="target">
+            <connections>
+                <outlet property="processor" destination="gxb-FL-5Gx" id="fze-wg-Mlc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnY-6g-Pdu" customClass="SegmentedCollectionView" customModule="SegmentedControl" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gF0-ft-viS" customClass="SegmentedCollectionViewFlowLayout" customModule="SegmentedControl" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="convertsAutoresizingMaskIntoConstraints" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="gxb-FL-5Gx" id="kSk-jQ-JIW"/>
+                        <outlet property="delegate" destination="gxb-FL-5Gx" id="2Cb-yr-X9W"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyT-vd-Hhl">
+                    <rect key="frame" x="0.0" y="60" width="375" height="5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="K23-J5-0qI"/>
+                        <constraint firstAttribute="height" constant="5" id="WSp-1a-Z48"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="convertsAutoresizingMaskIntoConstraints" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="right" secondItem="DnY-6g-Pdu" secondAttribute="right" id="5bq-by-ZgW"/>
+                <constraint firstItem="NyT-vd-Hhl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BAs-B1-RFS"/>
+                <constraint firstItem="NyT-vd-Hhl" firstAttribute="top" secondItem="DnY-6g-Pdu" secondAttribute="bottom" id="P2p-ae-wCo"/>
+                <constraint firstItem="DnY-6g-Pdu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W8Y-51-Xsq"/>
+                <constraint firstItem="DnY-6g-Pdu" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" id="aY1-t6-CcU"/>
+                <constraint firstAttribute="bottom" secondItem="NyT-vd-Hhl" secondAttribute="bottom" id="h0h-Iv-2a5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="convertsAutoresizingMaskIntoConstraints" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-299" y="-240"/>
+        </view>
+        <customObject id="gxb-FL-5Gx" customClass="SegmentedControlProcessor" customModule="SegmentedControl" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="DnY-6g-Pdu" id="B0V-Qu-Tjq"/>
+                <outlet property="segmentedControl" destination="-1" id="NUC-bb-q92"/>
+                <outlet property="stripeView" destination="NyT-vd-Hhl" id="POD-1d-Vto"/>
+                <outlet property="stripeViewHeightConstraint" destination="WSp-1a-Z48" id="Tfs-zJ-K1X"/>
+                <outlet property="stripeViewLeftOffsetConstraint" destination="BAs-B1-RFS" id="0z8-nQ-NBg"/>
+                <outlet property="stripeViewTopOffsetConstraint" destination="P2p-ae-wCo" id="VAM-wq-532"/>
+                <outlet property="stripeViewWidthConstraint" destination="K23-J5-0qI" id="XOE-Vf-Dqg"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

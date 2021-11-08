@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5762DAFABF6654BB45D68481 /* Pods_SegmentedControlExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6818D32A62B2F564A88F27 /* Pods_SegmentedControlExample.framework */; };
+		914F8E2A927945F77036CDB1 /* Pods_SegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33971C4B41DE9E1EFC44E46 /* Pods_SegmentedControl.framework */; };
+		A41C32CB1F1683C30098C264 /* TapSegmentedControlV2.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A41C32CA1F1683C30098C264 /* TapSegmentedControlV2.podspec */; };
+		A499CED91ED4741300D0E1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CED81ED4741300D0E1E5 /* AppDelegate.swift */; };
+		A499CEDB1ED4741300D0E1E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CEDA1ED4741300D0E1E5 /* ViewController.swift */; };
+		A499CEDE1ED4741300D0E1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A499CEDC1ED4741300D0E1E5 /* Main.storyboard */; };
+		A499CEE01ED4741300D0E1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A499CEDF1ED4741300D0E1E5 /* Assets.xcassets */; };
+		A499CEE31ED4741300D0E1E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A499CEE11ED4741300D0E1E5 /* LaunchScreen.storyboard */; };
+		A499CEF81ED4AD0A00D0E1E5 /* SegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42C9B111ED4731D00B8CD0A /* SegmentedControl.framework */; };
+		A499CF021ED59A4D00D0E1E5 /* SegmentedControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A42C9B111ED4731D00B8CD0A /* SegmentedControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A499CF0F1ED5B08000D0E1E5 /* SegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = A499CF0D1ED5B08000D0E1E5 /* SegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A499CF131ED5B1A400D0E1E5 /* SegmentedControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = A499CF111ED5B1A400D0E1E5 /* SegmentedControl.xib */; };
+		A499CF141ED5B1A400D0E1E5 /* SegmentedItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A499CF121ED5B1A400D0E1E5 /* SegmentedItemCollectionViewCell.xib */; };
+		A499CF1B1ED5B3EF00D0E1E5 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF171ED5B3EF00D0E1E5 /* SegmentedControl.swift */; };
+		A499CF1C1ED5B3EF00D0E1E5 /* SegmentedControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF181ED5B3EF00D0E1E5 /* SegmentedControlDelegate.swift */; };
+		A499CF1D1ED5B3EF00D0E1E5 /* SegmentedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF191ED5B3EF00D0E1E5 /* SegmentedItem.swift */; };
+		A499CF1E1ED5B3EF00D0E1E5 /* SegmentedItemSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF1A1ED5B3EF00D0E1E5 /* SegmentedItemSettings.swift */; };
+		A499CF221ED5B3F600D0E1E5 /* SegmentedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF1F1ED5B3F600D0E1E5 /* SegmentedCollectionViewFlowLayout.swift */; };
+		A499CF231ED5B3F600D0E1E5 /* SegmentedControlProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF201ED5B3F600D0E1E5 /* SegmentedControlProcessor.swift */; };
+		A499CF241ED5B3F600D0E1E5 /* SegmentedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499CF211ED5B3F600D0E1E5 /* SegmentedItemCollectionViewCell.swift */; };
+		A49D3A561F556DF6006BC2D0 /* SegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3A551F556DF6006BC2D0 /* SegmentedCollectionView.swift */; };
+		A49D3A581F5573F9006BC2D0 /* SegmentedCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3A571F5573F9006BC2D0 /* SegmentedCollectionViewDelegate.swift */; };
+		A4C4EF5A1F54180700A29BA5 /* SegmentedControlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4EF591F54180700A29BA5 /* SegmentedControlDataSource.swift */; };
+		A4C4EF5C1F541B4000A29BA5 /* SegmentedItemContentAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4EF5B1F541B4000A29BA5 /* SegmentedItemContentAlignment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A499CEFF1ED59A3500D0E1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42C9B081ED4731D00B8CD0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42C9B101ED4731D00B8CD0A;
+			remoteInfo = SegmentedControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A499CF031ED59A4D00D0E1E5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A499CF021ED59A4D00D0E1E5 /* SegmentedControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D6818D32A62B2F564A88F27 /* Pods_SegmentedControlExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentedControlExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		445352AD3C3E40B09B6BA001 /* Pods-SegmentedControlExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentedControlExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentedControlExample/Pods-SegmentedControlExample.debug.xcconfig"; sourceTree = "<group>"; };
+		5C6DF2636B02991DB923D62F /* Pods-SegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentedControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentedControl/Pods-SegmentedControl.debug.xcconfig"; sourceTree = "<group>"; };
+		966530BEE93C301FCECB58DE /* Pods-SegmentedControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentedControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentedControl/Pods-SegmentedControl.release.xcconfig"; sourceTree = "<group>"; };
+		A4029A3D1F790C4500EAE143 /* TapAdditionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TapAdditionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41C32CA1F1683C30098C264 /* TapSegmentedControlV2.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TapSegmentedControlV2.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A42C9B111ED4731D00B8CD0A /* SegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A499CED61ED4741300D0E1E5 /* SegmentedControlExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentedControlExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A499CED81ED4741300D0E1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A499CEDA1ED4741300D0E1E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A499CEDD1ED4741300D0E1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A499CEDF1ED4741300D0E1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A499CEE21ED4741300D0E1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A499CEE41ED4741300D0E1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A499CF0C1ED5B08000D0E1E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A499CF0D1ED5B08000D0E1E5 /* SegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControl.h; sourceTree = "<group>"; };
+		A499CF111ED5B1A400D0E1E5 /* SegmentedControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControl.xib; sourceTree = "<group>"; };
+		A499CF121ED5B1A400D0E1E5 /* SegmentedItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		A499CF171ED5B3EF00D0E1E5 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		A499CF181ED5B3EF00D0E1E5 /* SegmentedControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlDelegate.swift; sourceTree = "<group>"; };
+		A499CF191ED5B3EF00D0E1E5 /* SegmentedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedItem.swift; sourceTree = "<group>"; };
+		A499CF1A1ED5B3EF00D0E1E5 /* SegmentedItemSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedItemSettings.swift; sourceTree = "<group>"; };
+		A499CF1F1ED5B3F600D0E1E5 /* SegmentedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A499CF201ED5B3F600D0E1E5 /* SegmentedControlProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlProcessor.swift; sourceTree = "<group>"; };
+		A499CF211ED5B3F600D0E1E5 /* SegmentedItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A49D3A551F556DF6006BC2D0 /* SegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionView.swift; sourceTree = "<group>"; };
+		A49D3A571F5573F9006BC2D0 /* SegmentedCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		A4C4EF591F54180700A29BA5 /* SegmentedControlDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlDataSource.swift; sourceTree = "<group>"; };
+		A4C4EF5B1F541B4000A29BA5 /* SegmentedItemContentAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedItemContentAlignment.swift; sourceTree = "<group>"; };
+		C7153105D2E00D04AB40A0C8 /* Pods-SegmentedControlExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentedControlExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentedControlExample/Pods-SegmentedControlExample.release.xcconfig"; sourceTree = "<group>"; };
+		F33971C4B41DE9E1EFC44E46 /* Pods_SegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42C9B0D1ED4731D00B8CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914F8E2A927945F77036CDB1 /* Pods_SegmentedControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A499CED31ED4741300D0E1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499CEF81ED4AD0A00D0E1E5 /* SegmentedControl.framework in Frameworks */,
+				5762DAFABF6654BB45D68481 /* Pods_SegmentedControlExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25D2845F3159DADAABB90485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C6DF2636B02991DB923D62F /* Pods-SegmentedControl.debug.xcconfig */,
+				966530BEE93C301FCECB58DE /* Pods-SegmentedControl.release.xcconfig */,
+				445352AD3C3E40B09B6BA001 /* Pods-SegmentedControlExample.debug.xcconfig */,
+				C7153105D2E00D04AB40A0C8 /* Pods-SegmentedControlExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A624D85984FCCA7FE783B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4029A3D1F790C4500EAE143 /* TapAdditionsKit.framework */,
+				F33971C4B41DE9E1EFC44E46 /* Pods_SegmentedControl.framework */,
+				3D6818D32A62B2F564A88F27 /* Pods_SegmentedControlExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A42C9B071ED4731D00B8CD0A = {
+			isa = PBXGroup;
+			children = (
+				A41C32CA1F1683C30098C264 /* TapSegmentedControlV2.podspec */,
+				A42C9B131ED4731D00B8CD0A /* SegmentedControl */,
+				A499CED71ED4741300D0E1E5 /* SegmentedControlExample */,
+				A42C9B121ED4731D00B8CD0A /* Products */,
+				25D2845F3159DADAABB90485 /* Pods */,
+				8A624D85984FCCA7FE783B9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A42C9B121ED4731D00B8CD0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42C9B111ED4731D00B8CD0A /* SegmentedControl.framework */,
+				A499CED61ED4741300D0E1E5 /* SegmentedControlExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42C9B131ED4731D00B8CD0A /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				A499CF161ED5B3A700D0E1E5 /* Internal Classes */,
+				A499CF151ED5B39000D0E1E5 /* Public Classes */,
+				A499CF101ED5B18500D0E1E5 /* Resources */,
+				A499CF0B1ED5B03200D0E1E5 /* Supporting Files */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		A499CED71ED4741300D0E1E5 /* SegmentedControlExample */ = {
+			isa = PBXGroup;
+			children = (
+				A499CED81ED4741300D0E1E5 /* AppDelegate.swift */,
+				A499CEDA1ED4741300D0E1E5 /* ViewController.swift */,
+				A499CEDC1ED4741300D0E1E5 /* Main.storyboard */,
+				A499CEDF1ED4741300D0E1E5 /* Assets.xcassets */,
+				A499CEE11ED4741300D0E1E5 /* LaunchScreen.storyboard */,
+				A499CEE41ED4741300D0E1E5 /* Info.plist */,
+			);
+			path = SegmentedControlExample;
+			sourceTree = "<group>";
+		};
+		A499CF0B1ED5B03200D0E1E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A499CF0C1ED5B08000D0E1E5 /* Info.plist */,
+				A499CF0D1ED5B08000D0E1E5 /* SegmentedControl.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A499CF101ED5B18500D0E1E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A499CF111ED5B1A400D0E1E5 /* SegmentedControl.xib */,
+				A499CF121ED5B1A400D0E1E5 /* SegmentedItemCollectionViewCell.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A499CF151ED5B39000D0E1E5 /* Public Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A499CF171ED5B3EF00D0E1E5 /* SegmentedControl.swift */,
+				A4C4EF591F54180700A29BA5 /* SegmentedControlDataSource.swift */,
+				A499CF181ED5B3EF00D0E1E5 /* SegmentedControlDelegate.swift */,
+				A499CF191ED5B3EF00D0E1E5 /* SegmentedItem.swift */,
+				A499CF1A1ED5B3EF00D0E1E5 /* SegmentedItemSettings.swift */,
+				A4C4EF5B1F541B4000A29BA5 /* SegmentedItemContentAlignment.swift */,
+			);
+			path = "Public Classes";
+			sourceTree = "<group>";
+		};
+		A499CF161ED5B3A700D0E1E5 /* Internal Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A499CF1F1ED5B3F600D0E1E5 /* SegmentedCollectionViewFlowLayout.swift */,
+				A499CF201ED5B3F600D0E1E5 /* SegmentedControlProcessor.swift */,
+				A499CF211ED5B3F600D0E1E5 /* SegmentedItemCollectionViewCell.swift */,
+				A49D3A551F556DF6006BC2D0 /* SegmentedCollectionView.swift */,
+				A49D3A571F5573F9006BC2D0 /* SegmentedCollectionViewDelegate.swift */,
+			);
+			path = "Internal Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A42C9B0E1ED4731D00B8CD0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499CF0F1ED5B08000D0E1E5 /* SegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A42C9B101ED4731D00B8CD0A /* SegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42C9B191ED4731D00B8CD0A /* Build configuration list for PBXNativeTarget "SegmentedControl" */;
+			buildPhases = (
+				AFFAF84E18C7DF59F7FCEE64 /* [CP] Check Pods Manifest.lock */,
+				A42C9B0C1ED4731D00B8CD0A /* Sources */,
+				A42C9B0D1ED4731D00B8CD0A /* Frameworks */,
+				A42C9B0E1ED4731D00B8CD0A /* Headers */,
+				A42C9B0F1ED4731D00B8CD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SegmentedControl;
+			productName = SegmentedControl;
+			productReference = A42C9B111ED4731D00B8CD0A /* SegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A499CED51ED4741300D0E1E5 /* SegmentedControlExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A499CEE71ED4741300D0E1E5 /* Build configuration list for PBXNativeTarget "SegmentedControlExample" */;
+			buildPhases = (
+				74A347EBF97C639D4C6A1F99 /* [CP] Check Pods Manifest.lock */,
+				A499CED21ED4741300D0E1E5 /* Sources */,
+				A499CED31ED4741300D0E1E5 /* Frameworks */,
+				A499CED41ED4741300D0E1E5 /* Resources */,
+				A499CF031ED59A4D00D0E1E5 /* Embed Frameworks */,
+				B5057C322B0D59B77115A5E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A499CF001ED59A3500D0E1E5 /* PBXTargetDependency */,
+			);
+			name = SegmentedControlExample;
+			productName = SegmentedControlExample;
+			productReference = A499CED61ED4741300D0E1E5 /* SegmentedControlExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42C9B081ED4731D00B8CD0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tap Payments";
+				TargetAttributes = {
+					A42C9B101ED4731D00B8CD0A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G46S76PUH4;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					A499CED51ED4741300D0E1E5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G46S76PUH4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A42C9B0B1ED4731D00B8CD0A /* Build configuration list for PBXProject "SegmentedControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = A42C9B071ED4731D00B8CD0A;
+			productRefGroup = A42C9B121ED4731D00B8CD0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42C9B101ED4731D00B8CD0A /* SegmentedControl */,
+				A499CED51ED4741300D0E1E5 /* SegmentedControlExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42C9B0F1ED4731D00B8CD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499CF141ED5B1A400D0E1E5 /* SegmentedItemCollectionViewCell.xib in Resources */,
+				A499CF131ED5B1A400D0E1E5 /* SegmentedControl.xib in Resources */,
+				A41C32CB1F1683C30098C264 /* TapSegmentedControlV2.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A499CED41ED4741300D0E1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499CEE31ED4741300D0E1E5 /* LaunchScreen.storyboard in Resources */,
+				A499CEE01ED4741300D0E1E5 /* Assets.xcassets in Resources */,
+				A499CEDE1ED4741300D0E1E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74A347EBF97C639D4C6A1F99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SegmentedControlExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFAF84E18C7DF59F7FCEE64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SegmentedControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5057C322B0D59B77115A5E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SegmentedControlExample/Pods-SegmentedControlExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TapAdditionsKitV2/TapAdditionsKitV2.framework",
+				"${BUILT_PRODUCTS_DIR}/TapNibViewV2/TapNibViewV2.framework",
+				"${BUILT_PRODUCTS_DIR}/TapSwiftFixesV2/TapSwiftFixesV2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TapAdditionsKitV2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TapNibViewV2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TapSwiftFixesV2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SegmentedControlExample/Pods-SegmentedControlExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42C9B0C1ED4731D00B8CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49D3A581F5573F9006BC2D0 /* SegmentedCollectionViewDelegate.swift in Sources */,
+				A4C4EF5C1F541B4000A29BA5 /* SegmentedItemContentAlignment.swift in Sources */,
+				A499CF1D1ED5B3EF00D0E1E5 /* SegmentedItem.swift in Sources */,
+				A499CF241ED5B3F600D0E1E5 /* SegmentedItemCollectionViewCell.swift in Sources */,
+				A499CF231ED5B3F600D0E1E5 /* SegmentedControlProcessor.swift in Sources */,
+				A499CF221ED5B3F600D0E1E5 /* SegmentedCollectionViewFlowLayout.swift in Sources */,
+				A49D3A561F556DF6006BC2D0 /* SegmentedCollectionView.swift in Sources */,
+				A499CF1E1ED5B3EF00D0E1E5 /* SegmentedItemSettings.swift in Sources */,
+				A499CF1C1ED5B3EF00D0E1E5 /* SegmentedControlDelegate.swift in Sources */,
+				A4C4EF5A1F54180700A29BA5 /* SegmentedControlDataSource.swift in Sources */,
+				A499CF1B1ED5B3EF00D0E1E5 /* SegmentedControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A499CED21ED4741300D0E1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499CEDB1ED4741300D0E1E5 /* ViewController.swift in Sources */,
+				A499CED91ED4741300D0E1E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A499CF001ED59A3500D0E1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42C9B101ED4731D00B8CD0A /* SegmentedControl */;
+			targetProxy = A499CEFF1ED59A3500D0E1E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A499CEDC1ED4741300D0E1E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A499CEDD1ED4741300D0E1E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A499CEE11ED4741300D0E1E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A499CEE21ED4741300D0E1E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42C9B171ED4731D00B8CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A42C9B181ED4731D00B8CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A42C9B1A1ED4731D00B8CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6DF2636B02991DB923D62F /* Pods-SegmentedControl.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SegmentedControl/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR) @rpath";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.SegmentedControlV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A42C9B1B1ED4731D00B8CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966530BEE93C301FCECB58DE /* Pods-SegmentedControl.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SegmentedControl/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR) @rpath";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.SegmentedControlV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A499CEE51ED4741300D0E1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445352AD3C3E40B09B6BA001 /* Pods-SegmentedControlExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = SegmentedControlExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(CONFIGURATION_BUILD_DIR) @rpath";
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.SegmentedControlExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A499CEE61ED4741300D0E1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7153105D2E00D04AB40A0C8 /* Pods-SegmentedControlExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = SegmentedControlExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(CONFIGURATION_BUILD_DIR) @rpath";
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.SegmentedControlExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42C9B0B1ED4731D00B8CD0A /* Build configuration list for PBXProject "SegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42C9B171ED4731D00B8CD0A /* Debug */,
+				A42C9B181ED4731D00B8CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42C9B191ED4731D00B8CD0A /* Build configuration list for PBXNativeTarget "SegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42C9B1A1ED4731D00B8CD0A /* Debug */,
+				A42C9B1B1ED4731D00B8CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A499CEE71ED4741300D0E1E5 /* Build configuration list for PBXNativeTarget "SegmentedControlExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A499CEE51ED4741300D0E1E5 /* Debug */,
+				A499CEE61ED4741300D0E1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42C9B081ED4731D00B8CD0A /* Project object */;
+}

@@ -1,1 +1,2 @@
-# SegmentedControl-iOSV2
+# SegmentedControl-iOS
+Custom android-style segmented control for iOS
